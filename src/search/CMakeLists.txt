@@ -710,6 +710,24 @@ create_fast_downward_library(
 )
 
 create_fast_downward_library(
+    NAME h2_heuristic
+    HELP "The h^2 heuristic"
+    SOURCES
+        heuristics/h2_heuristic
+    DEPENDS
+        task_properties
+)
+
+create_fast_downward_library(
+    NAME h3_heuristic
+    HELP "The h^3 heuristic"
+    SOURCES
+        heuristics/h3_heuristic
+    DEPENDS
+        task_properties
+)
+
+create_fast_downward_library(
     NAME landmark_cut_heuristic
     HELP "The LM-cut heuristic"
     SOURCES
